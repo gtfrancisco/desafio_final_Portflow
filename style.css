@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+
+header img {
+    height: 6vh;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 7vh;
+}
+
+header li {
+    font-size: large;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+    transition: 1.3s;
+
+
+}
+
+li:hover {
+    font-weight: bold;
+    font-size: larger;
+    transition: 1.3s;
+    transform: scale(1.1);
+
+
+
+}
+
+
+main {
+    padding-top: 61px
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 17vh;
+    width: 100%;
+
+    background-color: #F6F6F6;
+    gap: 10px;
+
+}
+
+figure {
+    display: flex;
+
+    height: 5vh;
+    width: 28vw;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+}
+
+figure img {
+
+    height: 30px;
+}
+
+footer h5 {
+
+    width: 11vw;
+    text-align: end;
+
+}
+
+footer p {
+    font-size: 11px;
+}
+
+.resp a,
+h4 {
+    content-visibility: hidden;
+
+}
+
+.resp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#caixaAlta {
+    font-weight: 700;
+}
+
+.sectPrin {
+
+    display: flex;
+
+
+    background-image: url("./assets/laranja\ azul\ recorte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 81vh;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.sectPrin a {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    width: 22vw;
+
+    text-align: end;
+    text-decoration: none;
+    transition: 900ms;
+
+}
+
+.sectPrin a:hover {
+    transform: scale(1.1);
+    transition: 1.4s;
+    text-decoration: underline;
+
+}
+
+.sectPrin a:active {
+    transform: scale(1);
+    transition: 30ms;
+
+}
+
+.animation {
+    display: flex;
+    height: 14vh;
+
+    width: 67vw;
+    justify-content: flex-end
+}
+
+.animation li {
+
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    height: 12vh;
+    width: 21vw;
+
+
+
+}
+
+.animation li:hover {
+    transform: rotateZ(360deg);
+}
+
+.sectSec {
+    display: flex;
+    height: 159vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+
+}
+
+.sectSec section {
+
+    display: flex;
+    height: 139vh;
+    width: 85vw;
+    flex-wrap: wrap;
+    gap: 8px;
+
+
+
+}
+
+.sectSec img {
+
+    width: 283px;
+    height: 283px;
+    transition: 250ms;
+
+}
+
+.sectSec img:hover {
+    transform: scale(1.07);
+    z-index: 2;
+
+}
+
+
+
+@media(max-width:375px) {
+
+
+    header {
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+
+        position: fixed;
+        justify-content: space-around;
+        align-items: unset;
+        background-color: #FFFFFF;
+        z-index: 5;
+
+    }
+
+    header img {
+        height: 6vh;
+        z-index: 5;
+        position: absolute;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content:  flex-start;
+        align-items:center;
+    }
+    nav ul{
+    content-visibility:hidden
+
+    }
+    nav li{
+       background-color: #333333;
+       
+        width: 33vw;
+        height: 11vh;
+        align-items: flex-end;
+        transition: 1s;
+
+    }
+    button{
+        display: flex;
+       
+        background-color: black;
+        height: 7vh;
+        align-items: center;
+        justify-content: center;
+        width: 22vw;
+        transition: 1s;
+
+
+    }
+    button:hover{
+        transform: scale(1.1);
+        transition: 60ms;
+        
+    }
+    button:active{
+        transition: 80ms;
+    }
+    button:focus ~ ul{
+        
+        position: fixed;
+        left: 0;
+        top: 35px;
+
+       content-visibility: visible;
+
+        flex-direction: column;
+        border: solid;
+        height: 48vh;
+        width: 35vw;
+        align-items: center;
+        justify-content: unset;
+        transition: 600ms;
+      
+        
+    }
+    
+    
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding-top: 0;
+
+    }
+
+    .sectPrin {
+        background-image: url(./assets/laranja_azul_recorte_responsivo.png);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120vh;
+        width: 100vw;
+        display: flex;
+        justify-content: end;
+        align-items: flex-start;
+
+    }
+
+    .animation {
+
+        height: 35vh;
+        width: 70vw;
+        align-items: flex-end;
+
+    }
+
+    .animation li {
+        font-size: 45px;
+        height: 10vh;
+        width: 61vw;
+    }
+
+    .sectPrin a {
+        text-decoration: none;
+        font-size: 17px;
+        opacity: 0.7;
+        height: 10vh;
+        width: 47vw;
+    }
+
+    .sectSec {
+        width: 100vw;
+        height: 710vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .sectSec section {
+
+        height: 700vh;
+        width: 77vw;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column-reverse;
+
+    }
+
+    .ft_U {
+        order: 5;
+    }
+
+    .ft_D {
+        order: 11;
+    }
+
+    .ft_T {
+        order: 4;
+    }
+
+    .ft_Q {
+        order: 7;
+    }
+
+    .ft_C {
+        order: 12;
+    }
+
+    .ft_SS {
+        order: 3;
+    }
+
+    .ft_SE {
+        order: 6;
+    }
+
+    .ft_O {
+        order: 2;
+    }
+
+    .ft_N {
+        order: 9;
+    }
+
+    .ft_DZ {
+        order: 1;
+    }
+
+    .ft_OE {
+        order: 8;
+    }
+
+    .ft_DE {
+        order: 10;
+    }
+
+    footer {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer figure {
+        display: flex;
+        align-items: center;
+
+        width: 76vw;
+        height: 12vh;
+        background-color: #7FDBD4;
+        justify-content: center;
+
+    }
+
+    footer img {
+
+        height: 23px;
+    }
+
+
+    .resp {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 16vh;
+        width: 77vw;
+        position: relative;
+        gap: 0;
+
+
+    }
+
+    .resp h5 {
+
+        width: 18vw;
+
+
+    }
+
+    div p {
+
+        width: 52vw;
+        height: auto;
+        font-size: 9px;
+    }
+
+    .resp h4 {
+        background-color: #333333;
+        color: #707070;
+        font-size: 14px;
+        text-align: center;
+        height: 4vh;
+        width: 20vw;
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        transition: 40ms;
+
+    }
+
+    .resp h4:hover {
+        transform: scale(1.2);
+        transition: 1s;
+    }
+
+    .resp h4:active {
+        transform: scale(0.7);
+        transition: 10ms;
+
+    }
+
+    .resp a,
+    h4 {
+        content-visibility: visible
+    }
+
+
+
+
+}
